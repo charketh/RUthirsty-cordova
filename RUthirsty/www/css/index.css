@@ -1,0 +1,250 @@
+/**
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+*/
+
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    box-sizing: border-box;
+}
+
+html {
+    overscroll-behavior: none;
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: system-ui, -apple-system, -apple-system-font, 'Segoe UI', 'Roboto', sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    margin: 0;
+    padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+    text-size-adjust: none;
+    user-select: none;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.app {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 20px 0;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* 统计区域 */
+.stats {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px 0;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.stats h2 {
+    font-size: 18px;
+    color: #666;
+    margin: 0 0 15px 0;
+    font-weight: 500;
+}
+
+.count {
+    font-size: 72px;
+    font-weight: 700;
+    color: #667eea;
+    margin: 10px 0;
+    line-height: 1;
+}
+
+.count-label {
+    font-size: 20px;
+    color: #999;
+    margin: 10px 0 0 0;
+}
+
+/* 按钮容器 */
+.button-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.drink-button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.drink-button:active {
+    transform: scale(0.95);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.button-icon {
+    font-size: 48px;
+    margin-bottom: 5px;
+}
+
+.button-text {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* 记录区域 */
+.records-section {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.records-section h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 0 0 15px 0;
+    font-weight: 600;
+}
+
+.records-list {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.record-item {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.2s ease;
+}
+
+.record-item:hover {
+    background: #e9ecef;
+}
+
+.record-icon {
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.record-time {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+.record-date {
+    font-size: 14px;
+    color: #999;
+}
+
+.empty-message {
+    text-align: center;
+    color: #999;
+    padding: 40px 20px;
+    font-size: 16px;
+}
+
+/* 滚动条样式 */
+.records-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.records-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.records-list::-webkit-scrollbar-thumb {
+    background: #667eea;
+    border-radius: 10px;
+}
+
+.records-list::-webkit-scrollbar-thumb:hover {
+    background: #764ba2;
+}
+
+/* 动画效果 */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.record-item {
+    animation: slideIn 0.3s ease;
+}
+
+/* 深色模式支持 */
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    }
+
+    .stats,
+    .records-section {
+        background: rgba(30, 30, 30, 0.95);
+    }
+
+    .stats h2,
+    .records-section h3 {
+        color: #e0e0e0;
+    }
+
+    .record-item {
+        background: #2a2a2a;
+    }
+
+    .record-item:hover {
+        background: #3a3a3a;
+    }
+
+    .record-time {
+        color: #e0e0e0;
+    }
+}
