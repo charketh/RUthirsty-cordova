@@ -3,7 +3,7 @@ set -e
 #!/bin/bash
 
 # 设置环境变量 2月11日光传送使用，勿动
-export ANTHROPIC_AUTH_TOKEN=sk-ant-oat01-vigFskUsMhQnYi6Uv98ugVs5fIqHRGJv
+export ANTHROPIC_AUTH_TOKEN=sk-ant-oat01-vigFskUsMhQnYi6Uv98ugVs5fIqHRGJU
 export ANTHROPIC_BASE_URL=https://4399code.com/claudecode
 #export CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1
 # 备选API线路（去掉下面两行注释生效）
