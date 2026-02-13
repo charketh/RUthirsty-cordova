@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <title>RUthirsty - 喝水打卡</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app">
+        <header>
+            <h1>RUthirsty</h1>
+            <p class="subtitle">喝水打卡</p>
+        </header>
+
+        <main>
+            <section class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-icon">📅</div>
+                    <div class="stat-content">
+                        <p class="stat-label">今日打卡</p>
+                        <p class="stat-value" id="todayCount">0</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-content">
+                        <p class="stat-label">总打卡</p>
+                        <p class="stat-value" id="totalCount">0</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="action-container">
+                <button id="checkInBtn" class="check-in-btn">
+                    <div class="water-drop"></div>
+                    <span>打卡</span>
+                </button>
+            </section>
+
+            <section class="records-section">
+                <h2 class="section-title">历史记录</h2>
+                <div id="recordsList" class="records-list">
+                    <p class="empty-message">暂无打卡记录</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
