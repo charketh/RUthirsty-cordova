@@ -1,0 +1,21 @@
+# Node modules
+node_modules/
+
+# Cordova build outputs
+platforms/
+plugins/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build artifacts
+*.apk
+*.aab
