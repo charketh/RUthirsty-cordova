@@ -2,8 +2,8 @@
 set -e
 #!/bin/bash
 
-# 设置环境变量 2月13日全光企家使用，勿动
-export ANTHROPIC_AUTH_TOKEN=
+# 设置环境变量 2月28日解决方案部使用，勿动
+export ANTHROPIC_AUTH_TOKEN=sk-YSZzO6liWWYYKu2irfMm3CYqkvmG5OQ4mSCoMcsQKQ4QO69O
 export ANTHROPIC_BASE_URL=https://apiHK.Ai
 #export CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1
 # 备选API线路（去掉下面两行注释生效）
