@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.parking.checkin" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>停车打卡</name>
+    <description>
+        一个简单的小区停车打卡应用，帮助你记录停车信息。
+    </description>
+    <author email="dev@parking.com" href="">
+        Parking Team
+    </author>
+    <content src="index.html" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+
+    <preference name="Orientation" value="portrait" />
+    <preference name="Fullscreen" value="false" />
+
+    <platform name="android">
+        <preference name="android-minSdkVersion" value="24" />
+        <preference name="android-targetSdkVersion" value="35" />
+        <icon density="ldpi" src="www/img/logo.png" />
+        <icon density="mdpi" src="www/img/logo.png" />
+        <icon density="hdpi" src="www/img/logo.png" />
+        <icon density="xhdpi" src="www/img/logo.png" />
+        <icon density="xxhdpi" src="www/img/logo.png" />
+        <icon density="xxxhdpi" src="www/img/logo.png" />
+    </platform>
+
+    <platform name="ios">
+        <preference name="deployment-target" value="13.0" />
+        <icon src="www/img/logo.png" width="57" height="57" />
+        <icon src="www/img/logo.png" width="114" height="114" />
+        <icon src="www/img/logo.png" width="120" height="120" />
+        <icon src="www/img/logo.png" width="180" height="180" />
+    </platform>
+</widget>
