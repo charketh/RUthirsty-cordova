@@ -1,0 +1,23 @@
+{
+  "name": "ruthirsty-cordova",
+  "displayName": "RUthirsty",
+  "version": "1.0.0",
+  "description": "喝水打卡应用 - Water Tracking Reminder App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "RUthirsty Team",
+  "license": "MIT",
+  "devDependencies": {
+    "cordova": "^12.0.0"
+  },
+  "cordova": {
+    "platforms": [
+      "android"
+    ]
+  }
+}
