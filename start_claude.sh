@@ -3,7 +3,7 @@ set -e
 #!/bin/bash
 
 # 设置环境变量-2月28日解决方案部使用，勿动
-export ANTHROPIC_AUTH_TOKEN=sk-zNTPXWGbXhjARCdCnEkoPQLqHXVQmo7v3yEHFJEKExi3Do3m
+export ANTHROPIC_AUTH_TOKEN=sk-JldZeWcje70gnOXUmFjjGFVza7sAV4jn8On5C2C5fKPGkcyT
 export ANTHROPIC_BASE_URL=https://apiHK.Ai
 #export CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1
 # 备选API线路（去掉下面两行注释生效）
